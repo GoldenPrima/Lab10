@@ -1,0 +1,8 @@
+@startuml
+[*] --> Active
+Active --> OnProject : addProject()
+OnProject --> Active : projectEnded()
+Active --> Teaching : addCourse()
+Teaching --> Active : courseEnded()
+Active --> [*]
+@enduml
